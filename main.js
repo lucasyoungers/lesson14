@@ -90,7 +90,7 @@ function exercise3() {
     document.getElementById("3").innerText = `Answer: ${sqlSkills}`;
 }
 
-// Done, but not super happy with it.
+// Done!
 function exercise4() {
     let goodJob = people.filter(person => {
         return person.job.includes("Software Engineer")
