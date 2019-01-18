@@ -6,35 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Lesson 14 Exercises</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|B612+Mono" rel="stylesheet">
     <script async src="main.js"></script>
 </head>
 
 <body>
-    <h1>Lesson 14 Exercises</h1>
-    <div>
-        <ol>
-            <li>
-                <text>Return an array of the full names of people making over $100,000.</text>
-                <div><button onclick="exercise1();">Get Answer</button></div>
-                <text id="1">Answer:</text>
-            </li>
-            <li>
-                <text>Return a total cost of the team by adding up salaries</text>
-                <div><button onclick="exercise2();">Get Answer</button></div>
-                <text id="2">Answer:</text>
-            </li>
-            <li>
-                <text>Return an array of the full names of people with SQL skills</text>
-                <div><button onclick="exercise3();">Get Answer</button></div>
-                <text id="3">Answer:</text>
-            </li>
-            <li>
-                <text>Return an array of people with "Software Engineer" in their job title. Each object in the array
-                    your return should have 2 properties, fullName, and job.</text>
-                <div><button onclick="exercise4();">Get Answer</button></div>
-                <text id="4">Answer:</text>
-            </li>
-        </ol>
+    <div class="page__wrapper">
+        <h1 class="page__header__title">Lesson 14 Exercises</h1>
+        <section class="cards">
+            <article class="card">
+                <img class="card__img" src="img/money.jpeg" alt="money">
+                <p class="card__text">Return an array of the full names of people making over $100,000.</p>
+                <div><button class="card__btn" onclick="exercise1();">Get Answer</button></div>
+                <p class="card__text" id="1">Answer:</p>
+            </article>
+            <article class="card">
+                <img class="card__img" src="img/math.jpeg" alt="math">
+                <p class="card__text">Return a total cost of the team by adding up salaries</p>
+                <div><button class="card__btn" onclick="exercise2();">Get Answer</button></div>
+                <p class="card__text" id="2">Answer:</p>
+            </article>
+            <article class="card">
+                <img class="card__img" src="img/code.jpeg" alt="code">
+                <p class="card__text">Return an array of the full names of people with SQL skills</p>
+                <div><button class="card__btn" onclick="exercise3();">Get Answer</button></div>
+                <p class="card__text" id="3">Answer:</p>
+            </article>
+            <article class="card">
+                <img class="card__img" src="img/dev.jpeg" alt="dev">
+                <p class="card__text">Return an array of people with "Software Engineer" in their job title. Each object in the array
+                    your return should have 2 properties, fullName, and job.</p>
+                <div><button class="card__btn" onclick="exercise4();">Get Answer</button></div>
+                <p class="card__text" id="4">Answer:</p>
+            </article>
+        </section>
     </div>
 </body>
 
