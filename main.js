@@ -61,28 +61,42 @@ let people = [{
 
 // Done!
 function exercise1() {
-    let answer = people.filter((person) => person.Salary > 100000).map((person) => person.firstName + " " + person.lastName).join(", ");
-    document.getElementById("1").innerText = `Answer: ${answer}`;
+    let lotsOfMoney = people.filter(person => person.Salary > 100000).map(person => {
+        return `${person.firstName} ${person.lastName}`
+    }).join(", ");
+
+    document.getElementById("1").innerText = `Answer: ${lotsOfMoney}`;
 }
 
 // Done!
 function exercise2() {
     let totalSalary = people.reduce((accumulator, person) => {
-        return accumulator + person.Salary;
+        return accumulator + person.Salary
     }, 0);
+
     document.getElementById("2").innerText = `Answer: ${totalSalary}`;
 }
 
 // Done!
 function exercise3() {
     let sqlSkills = people.filter((person) => {
-        return person.Skills.filter(skill => { return skill === "SQL" }).length > 0;
-    }).map((person) => person.firstName + " " + person.lastName).join(", ");
+        return person.Skills.filter(skill => {
+            return skill === "SQL"
+        }).length > 0;
+    }).map((person) => {
+        return `${person.firstName} ${person.lastName}`
+    }).join(", ");
+
     document.getElementById("3").innerText = `Answer: ${sqlSkills}`;
 }
 
 // Done, but not super happy with it.
 function exercise4() {
-    let goodJob = people.filter(person => person.job.includes("Software Engineer")).map(person => person.firstName + " " + person.lastName + "—" + person.job).join(", ");
+    let goodJob = people.filter(person => {
+        return person.job.includes("Software Engineer")
+    }).map(person => {
+        return `${person.firstName} ${person.lastName}—${person.job}`
+    }).join(", ");
+
     document.getElementById("4").innerText = `Answer: ${goodJob}`;
 }
