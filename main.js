@@ -83,6 +83,6 @@ function exercise3() {
 
 // Done, but not super happy with it.
 function exercise4() {
-    let goodJob = people.filter(person => person.job.includes("Software Engineer")).map(person => person.firstName + " " + person.lastName + ": " + person.job).join(", ");
+    let goodJob = people.filter(person => person.job.includes("Software Engineer")).map(person => person.firstName + " " + person.lastName + "—" + person.job).join(", ");
     document.getElementById("4").innerText = `Answer: ${goodJob}`;
 }
